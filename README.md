@@ -1,2 +1,2 @@
 # COW
-Customer Onboarding Project
+Customer Onboarding Website
