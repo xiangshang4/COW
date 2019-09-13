@@ -1,0 +1,118 @@
+html,body {
+  height: 100%; margin: 0px; padding: 0px; }
+  #navbar {
+  margin-bottom:0; }
+
+.alert {
+  border-radius: 0; }
+
+.container {
+  width:100%;
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto; }
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-sm-1,
+.col-xs-2, .col-sm-2, .col-md-2, .col-sm-2,
+.col-xs-3, .col-sm-3, .col-md-3, .col-sm-3,
+.col-xs-4, .col-sm-4, .col-md-4, .col-sm-4,
+.col-xs-5, .col-sm-5, .col-md-5, .col-sm-5,
+.col-xs-6, .col-sm-6, .col-md-6, .col-sm-6,
+.col-xs-7, .col-sm-7, .col-md-7, .col-sm-7,
+.col-xs-8, .col-sm-8, .col-md-8, .col-sm-8,
+.col-xs-9, .col-sm-9, .col-md-9, .col-sm-9,
+.col-xs-10, .col-sm-10, .col-md-10, .col-sm-10,
+.col-xs-11, .col-sm-11, .col-md-11, .col-sm-11,
+.col-xs-12, .col-sm-12, .col-md-12, .col-sm-12 {
+  position: relative;
+  height:100%;
+  min-height: 1px;
+  padding-right: 0;
+  padding-left: 0; }
+
+.row {
+  margin-right: 0;
+  margin-left: 0; }
+
+.footer {
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-top: none; }
+
+.panel {
+  border:none; }
+h1{
+  color: red;
+}
+label{
+  width: 240px;
+  display: inline-block;
+}
+
+
+#currac{
+  width: 500px;
+}
+#timedep{
+  width: 500px;
+}
+#hyddepac{
+  width: 500px;
+}
+#regname{
+  width: 600px;
+}
+
+.bizdetail{
+  width:600px;
+}
+
+.header{
+  background-color: black;
+  color: white;
+}
+
+.underline{
+  text-decoration: underline;
+}
+.noteta{
+  width: 400px;
+  margin-right: 100px;
+  display: inline-block;
+  /* margin-right: 500px */
+}
+
+#tp{
+  width: 120%;
+  height: auto;
+  padding-left: 0px;
+  padding-left: :0;
+  margin-left: 0;
+}
+
+/* Gideon table*/
+
+#tablem {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#tablem td, #tablem th {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+#tablem tr:nth-child(even){background-color: #f2f2f2;}
+
+#tablem tr:hover {background-color: #ddd;}
+
+#tablem th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #85C0DB;
+  color: white;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>form</title>
+  </head>
+  <body>
+  {% extends "basicapp/template.html"%}
+
+    {% block body_block %}
+    {% load my_extras %}
+    <h2 align='center'> Application for Opening Current Account/ Time Deposit /
+    High Yield Demand Deposit Account for Corporate / Non-Individual Customer</h2><br>
+
+    <div class="container">
+      <form method="POST" align="">
+        <!-- {{form.as_p}} -->
+        {% for f in form %}
+          <label>{{ f.name.title | remove_underscore:'_' }}:</label>
+          <!-- {{f.help_text}} -->
+          {{ f }}<br>
+            {% endfor %}
+        {% csrf_token%}
+        <input type="submit" name="here" value="Submit">
+      </form>
+    </div>
+    <p align="justify">
+      <b>
+        # We agree that we are bound by Mizuho Bank, Ltd. (Singapore Branch) General Terms and Conditions Relating to Current and Other Accounts For Corporate Customers (the "General Terms and Conditions"), which shall govern the relationship between us and Mizuho Bank, Ltd. We acknowledge receipt of a copy of the General Terms and Conditions and represent, warrant and undertake that all information provided by us to the Bank, including but not limited to all information provided for the purpose of opening an account with the Bank, is true, accurate and complete and if and when there is any change in such information, we will immediately update the Bank in accordance with Clause 14 of the General Terms and Conditions.<br><br>
+        ## We agree that we are bound by Mizuho Bank, Ltd. (Singapore Branch) General Terms and Conditions Relating to High Yield Demand Deposit
+        Accounts For Corporate Customers (the "HYDD Terms and Conditions"), which shall govern the relationship between us and Mizuho Bank, Ltd. We
+        acknowledge receipt of a copy of the HYDD Terms and Conditions and represent, warrant and undertake that all information provided by us to the
+        and when there is any change in such information, we will immediately update the Bank in accordance with Clause 10 of the HYDD Terms and Bank, including but not limited to all information provided for the purpose of opening an account with the Bank, is true, accurate and complete and if
+        Conditions.<br><br>
+        <span class="underline">United States Foreign Account Tax Compliance Act / OECD Common Reporting Standard for Automatic Exchange of Financial Account Information in
+        Tax Matters</span><br>
+        We understand and agree that the Bank may be required to obtain additional documents and/or forms pursuant to requests from domestic or overseas
+        regulators or tax authorities. In such circumstances, we agree that we shall sign such additional documents and/or forms where we are subject to the
+        relevant jurisdiction’s requirements.<br><br>
+        We further understand and agree that the Bank may withhold, and pay out, from our account(s) such amounts as may be required according to
+        applicable laws, regulations, guidelines and/or agreements with regulators or authorities and directives.
+      </b>
+    </p>
+
+    <p class="noteta">
+      <b>Note to Applicant: Deposit Insurance Scheme</b><br>
+      Singapore dollar deposits of non-bank depositors are insured by the
+      Singapore Deposit Insurance Corporation, for up to S$75,000 in aggregate
+      per depositor per Scheme member by law. Foreign currency deposits, dual
+      currency investments, structured deposits and other investment products
+      are not insured.
+    </p>
+    <p class="noteta" align="right">Authorised Signatory(ies)<br>
+    (Company Stamp, if any)<textarea name="name" rows="6" cols="60" ></textarea></p>
+
+    <p align=right >Name(s):<input type="text" name="" >
+    {% endblock %}
+  </body>
+</html>

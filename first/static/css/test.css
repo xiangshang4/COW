@@ -1,0 +1,36 @@
+body{
+  background-color:#fff9e6;
+  margin-left: 120px;
+  margin-right: 125px;
+}
+#currac{
+  width: 500px;
+}
+#timedep{
+  width: 500px;
+}
+#hyddepac{
+  width: 500px;
+}
+#regname{
+  width: 600px;
+}
+
+.bizdetail{
+  width:600px;
+}
+
+.header{
+  background-color: black;
+  color: white;
+}
+
+.underline{
+  text-decoration: underline;
+}
+.noteta{
+  width: 400px;
+  margin-right: 100px;
+  display: inline-block;
+  /* margin-right: 500px */
+}
